@@ -1,0 +1,6 @@
+<% @director.films.each do |film| %>
+  <h3><%= film.title %></h3>
+<% end %>
+<br>
+<h4>Total sales: <%= @director.films.total_sales %></h4>
+<h4>Average sales: <%= @director.films.average_sales %></h4>
